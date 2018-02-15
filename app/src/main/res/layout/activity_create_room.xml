@@ -4,23 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.example.traxx.hangman.SignUpActivity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:background="@drawable/hangman" />
-
-    </RelativeLayout>
-
-
+    tools:context="com.example.traxx.hangman.CreateRoomActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,50 +17,34 @@
             android:orientation="vertical"
             android:paddingLeft="15dp"
             android:paddingRight="15dp">
+
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/editTextRoomName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:hint="email"
-                android:inputType="textEmailAddress"
+                android:hint="Room name"
+                android:inputType="text"
                 android:paddingBottom="15dp"
                 android:textColorHint="@color/colorAccent" />
+
             <EditText
-                android:id="@+id/editTextPassword"
+                android:id="@+id/editTextMaxNumberOfPlayers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:hint="password"
-                android:inputType="textPassword"
-                android:paddingBottom="15dp"
-                android:textColorHint="@color/colorAccent" />
-            <EditText
-                android:id="@+id/editTextRepeatedPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:hint="repeat password"
-                android:inputType="textPassword"
+                android:hint="Max number of players"
+                android:inputType="number"
                 android:paddingBottom="15dp"
                 android:textColorHint="@color/colorAccent" />
             <Button
-                android:id="@+id/buttonSignUp"
+                android:id="@+id/buttonCreateRoom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="7dp"
-                android:text="Sign Up"
+                android:text="Create room"
                 android:textAllCaps="false"
-                android:textColor="@color/colorAccent" />
-            <TextView
-                android:id="@+id/textViewSignIn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="15dp"
-                android:text="Already have an account? Login"
-                android:textAlignment="center"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorAccent" />
         </LinearLayout>
         <ProgressBar

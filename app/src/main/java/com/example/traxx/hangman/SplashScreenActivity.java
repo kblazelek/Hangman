@@ -13,15 +13,15 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBarSplashScreen);
+        ProgressBar progressBar = findViewById(R.id.progressBarSplashScreen);
         progressBar.setVisibility(View.VISIBLE);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(),SignInActivity.class);
                 startActivity(intent);
                 finish();
             }
-        }, 2000);
+        }, 1000);
     }
 }

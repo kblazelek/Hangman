@@ -14,4 +14,7 @@
         completions."
     </string>
     <string name="title_activity_sign_up">Sign up</string>
+    <string name="title_activity_room">RoomActivity</string>
+    <string name="facebook_app_id">985406614939722</string>
+    <string name="fb_login_protocol_scheme">fb985406614939722</string>
 </resources>

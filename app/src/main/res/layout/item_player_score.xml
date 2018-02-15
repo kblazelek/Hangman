@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp" >
+
+    <ImageView
+        android:id="@+id/imageViewPlayerIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/user" />
+    <TextView
+        android:id="@+id/textViewPlayerName"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@id/imageViewPlayerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Player name"
+        android:layout_alignBaseline="@id/imageViewPlayerIcon"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageViewAttempts"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/attempt_0"
+        android:layout_below="@id/imageViewPlayerIcon"
+        android:background="@android:color/transparent"/>
+</RelativeLayout >
